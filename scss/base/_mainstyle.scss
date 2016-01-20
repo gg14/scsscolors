@@ -1,0 +1,149 @@
+
+section {
+@include outer-container;
+ }
+.cflex {display: flex;}
+.wrap {flex-wrap: wrap;}
+
+.caja, .caja2 {
+    div {
+        height: $bsizeb;
+    }
+}
+.caja {
+    height: $bsize;
+    max-width: $bsize;
+    flex-wrap: wrap;
+     div {
+        display:flex;
+         div:nth-child(1n){
+             width: $bsizeb;
+         }
+    }
+}
+.caja2 {
+    height: $bsize;
+    min-width: $bsize;
+    $elementos: 3;
+    $i:0;
+    $p:0;
+    @for $i from 1 to ($elementos+1){
+        div:nth-child(#{$i}) {
+            $p:$p + ($elementos*($i/10));
+            background: rgba($negro, ($p/10));
+        }      
+    }
+ 
+}
+.color1 { background: $verde; }
+.color2 { background: $naranja; }
+.color3 { background: $azul; }
+.color4 { background: $morado; }
+.color5 { background: $blanco; }
+.color1, .color2, .color3, .color4, color5 {    
+}
+
+.claro {
+    :nth-child(1){background:rgba($blanco, 0.65);}
+    :nth-child(2){background:rgba($blanco, 0.50);}
+    :nth-child(3){background:rgba($blanco, 0.35);}
+}
+.oscuro {
+    :nth-child(1){background:rgba($negro, 0.65);}
+    :nth-child(2){background:rgba($negro, 0.50);}
+    :nth-child(3){background:rgba($negro, 0.35);}
+}
+
+.grises1, .grises2 {
+     max-width: $bsize * 4.5;
+    
+    div {
+        height: $bsizeb;
+        width: 100%;
+    }
+}
+.grises1{
+    $elementos: 10;
+    $i:0;
+    $p:0;
+    @for $i from $elementos to 0{
+        div:nth-child(#{$i}) {
+            $p:$p + ($elementos/10);
+            background: rgba($griz, ($p/10));
+        }      
+    }
+}
+// otra forma
+.grises2{
+    :nth-child(1){background:rgba($negro, 0.50);}
+    :nth-child(2){background:rgba($negro, 0.55);}
+    :nth-child(3){background:rgba($negro, 0.60);}
+    :nth-child(4){background:rgba($negro, 0.65);}
+    :nth-child(5){background:rgba($negro, 0.70);}
+    :nth-child(6){background:rgba($negro, 0.75);}
+    :nth-child(7){background:rgba($negro, 0.80);}
+    :nth-child(8){background:rgba($negro, 0.85);}
+    :nth-child(9){background:rgba($negro, 0.90);}
+    :nth-child(10){background:rgba($negro, 0.95);}
+}
+
+// personal profile
+.profile {
+    @include span-columns(12);
+}
+
+.avatar {
+    @include span-columns(3);
+        @include omega();
+
+    max-width: 210px;
+    background: green;
+}
+.personal_block {
+    @include span-columns(6); 
+        @include omega();
+
+}
+
+.personal_block2 {
+    
+}
+
+.gcontainer{
+    @include outer-container;    
+}
+.gspan { 
+    
+}
+.ga{
+    @include span-columns(3);
+    height: 120px;
+    @include omega();
+    }
+
+.gg{
+    @include span-columns(8);
+}
+.gb{
+    @include span-columns(8);
+    height: 60px;
+    text-align: center;
+    background: $azul1; 
+}
+
+.gc{ 
+    @include span-columns(8); height: 60px;
+    @include omega();
+    text-align: center;
+    background: $azul2; 
+    color: white;
+}
+
+
+
+
+
+
+
+
+

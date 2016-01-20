@@ -1,0 +1,15 @@
+{
+  "name": "suit-utils",
+  "homepage": "https://github.com/suitcss/utils",
+  "version": "0.11.0",
+  "_release": "0.11.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.11.0",
+    "commit": "9f1480d9d4402c1cab84cd05e834e54b7be8ece9"
+  },
+  "_source": "git://github.com/suitcss/utils.git",
+  "_target": "~0.11.0",
+  "_originalSource": "suit-utils",
+  "_direct": true
+}

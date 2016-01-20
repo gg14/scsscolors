@@ -1,0 +1,28 @@
+
+// responsive
+$mobile: new-breakpoint(max-width 500px 4);
+
+// Tamaño de cajas
+
+$bsize: 130px; 
+$fg-gutter: 0em;             // Gutter Width
+$bsizeb: $bsize /3;
+
+// color
+$verde: #1ABC9C;
+$naranja: #FBA026;
+$azul: #2C82C9;
+$blanco: white;
+$morado: #7E0B80;
+$negro: black;
+$griz: #ccc;
+$azul1: #76AEDC;
+$azul2: #1D5583;
+
+// Font 
+
+$stack-sans-serif : Helvetica, Arial, sans-serif;
+$stack-helvetica  : 'Helvetica Neue', $stack-sans-serif;
+
+
+

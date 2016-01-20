@@ -1,0 +1,200 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+section {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  section::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.cflex {
+  display: flex; }
+
+.wrap {
+  flex-wrap: wrap; }
+
+.caja div, .caja2 div {
+  height: 43.3333333333px; }
+
+.caja {
+  height: 130px;
+  max-width: 130px;
+  flex-wrap: wrap; }
+  .caja div {
+    display: flex; }
+    .caja div div:nth-child(1n) {
+      width: 43.3333333333px; }
+
+.caja2 {
+  height: 130px;
+  min-width: 130px; }
+  .caja2 div:nth-child(1) {
+    background: rgba(0, 0, 0, 0.03); }
+  .caja2 div:nth-child(2) {
+    background: rgba(0, 0, 0, 0.09); }
+  .caja2 div:nth-child(3) {
+    background: rgba(0, 0, 0, 0.18); }
+
+.color1 {
+  background: #1ABC9C; }
+
+.color2 {
+  background: #FBA026; }
+
+.color3 {
+  background: #2C82C9; }
+
+.color4 {
+  background: #7E0B80; }
+
+.color5 {
+  background: white; }
+
+.claro :nth-child(1) {
+  background: rgba(255, 255, 255, 0.65); }
+.claro :nth-child(2) {
+  background: rgba(255, 255, 255, 0.5); }
+.claro :nth-child(3) {
+  background: rgba(255, 255, 255, 0.35); }
+
+.oscuro :nth-child(1) {
+  background: rgba(0, 0, 0, 0.65); }
+.oscuro :nth-child(2) {
+  background: rgba(0, 0, 0, 0.5); }
+.oscuro :nth-child(3) {
+  background: rgba(0, 0, 0, 0.35); }
+
+.grises1, .grises2 {
+  max-width: 585px; }
+  .grises1 div, .grises2 div {
+    height: 43.3333333333px;
+    width: 100%; }
+
+.grises1 div:nth-child(10) {
+  background: rgba(204, 204, 204, 0.1); }
+.grises1 div:nth-child(9) {
+  background: rgba(204, 204, 204, 0.2); }
+.grises1 div:nth-child(8) {
+  background: rgba(204, 204, 204, 0.3); }
+.grises1 div:nth-child(7) {
+  background: rgba(204, 204, 204, 0.4); }
+.grises1 div:nth-child(6) {
+  background: rgba(204, 204, 204, 0.5); }
+.grises1 div:nth-child(5) {
+  background: rgba(204, 204, 204, 0.6); }
+.grises1 div:nth-child(4) {
+  background: rgba(204, 204, 204, 0.7); }
+.grises1 div:nth-child(3) {
+  background: rgba(204, 204, 204, 0.8); }
+.grises1 div:nth-child(2) {
+  background: rgba(204, 204, 204, 0.9); }
+.grises1 div:nth-child(1) {
+  background: #cccccc; }
+
+.grises2 :nth-child(1) {
+  background: rgba(0, 0, 0, 0.5); }
+.grises2 :nth-child(2) {
+  background: rgba(0, 0, 0, 0.55); }
+.grises2 :nth-child(3) {
+  background: rgba(0, 0, 0, 0.6); }
+.grises2 :nth-child(4) {
+  background: rgba(0, 0, 0, 0.65); }
+.grises2 :nth-child(5) {
+  background: rgba(0, 0, 0, 0.7); }
+.grises2 :nth-child(6) {
+  background: rgba(0, 0, 0, 0.75); }
+.grises2 :nth-child(7) {
+  background: rgba(0, 0, 0, 0.8); }
+.grises2 :nth-child(8) {
+  background: rgba(0, 0, 0, 0.85); }
+.grises2 :nth-child(9) {
+  background: rgba(0, 0, 0, 0.9); }
+.grises2 :nth-child(10) {
+  background: rgba(0, 0, 0, 0.95); }
+
+.profile {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 100%; }
+  .profile:last-child {
+    margin-right: 0; }
+
+.avatar {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 25%;
+  margin-right: 0;
+  max-width: 210px;
+  background: green; }
+  .avatar:last-child {
+    margin-right: 0; }
+
+.personal_block {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 50%;
+  margin-right: 0; }
+  .personal_block:last-child {
+    margin-right: 0; }
+
+.gcontainer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .gcontainer::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.ga {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 25%;
+  height: 120px;
+  margin-right: 0; }
+  .ga:last-child {
+    margin-right: 0; }
+
+.gg {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 66.6666666667%; }
+  .gg:last-child {
+    margin-right: 0; }
+
+.gb {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 66.6666666667%;
+  height: 60px;
+  text-align: center;
+  background: #76AEDC; }
+  .gb:last-child {
+    margin-right: 0; }
+
+.gc {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 66.6666666667%;
+  height: 60px;
+  margin-right: 0;
+  text-align: center;
+  background: #1D5583;
+  color: white; }
+  .gc:last-child {
+    margin-right: 0; }
+
+/*# sourceMappingURL=application.css.map */
